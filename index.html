@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afghan Recipe Book</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      body {
+    font-family: 'Pacifico', cursive;
+}
+      background-color: #fff8e1;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      background-color: #fff3cd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .welcome {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .welcome h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .welcome p {
+      font-size: 18px;
+    }
+
+    .featured {
+      background-color: #ffffff;
+      margin: 30px auto;
+      max-width: 700px;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    .featured img {
+      width: 100%;
+      border-radius: 15px;
+      margin: 15px 0;
+    }
+
+    .categories {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .categories h3 {
+      margin-bottom: 20px;
+    }
+
+    .categories button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #ffa726;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    footer 
+      {background-color: #ffe082;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Afghan Recipe Book</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="add-recipe.html">Add Recipe</a>
+    <a href="recipe-list.html">Recipe List</a>
+  <a href="recipe-details.html">Recipe details</a>
+  </nav>
+
+  <section class="welcome">
+    <h1>Welcome to My Recipe Book</h1>
+    <p>Explore delicious Afghan recipes for every occasion!</p>
+  </section>
+
+  <section class="featured">
+    <h2>Recipe of the Day: Kabuli Pulao</h2>
+    <p>A classic Afghan rice dish made with lamb, carrots, raisins, and a blend of spices.</p>
+    <img src="https://img.freepik.com/free-photo/close-up-rice-with-carrots-garnished-with-lamb-pieces-served-with-pickles-yogurt_141793-2051.jpg?t=st=1744237171~exp=1744240771~hmac=8390b9ee3b458e2d4049210aec60bd95e5e5f729cbf072a4c3dfbeb11704fa07&w=1380" alt="Kabuli Pulao">
+    <a href="recipe-list.html">View Full Recipe</a>
+  </section>
+
+
+
+
+  <section class="categories">
+    <h3>Featured Categories</h3>
+    <button onclick="location.href='recipe-list.html#meals'">Meals</button>
+    <button onclick="location.href='recipe-list.html#drinks'">Drinks</button>
+    <button onclick="location.href='recipe-list.html#desserts'">Desserts</button>
+<button onclick="location.href='recipe-list.html#quick meals'">Quick meals</button>
+
+
+
+
+
+  <footer>
+    Made with love by Sadaf Qaderi| Afghan Taste Forever
+  </footer>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.to(".featured", {
+      scrollTrigger: {
+        trigger: ".featured",
+        start: "top 80%",
+      },
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out"
+    });
+  </script>
+
+
+
+</body>
+</html>
+
+
